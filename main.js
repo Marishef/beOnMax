@@ -18,10 +18,51 @@ for (let i = 0; i < 2; i++) {
         quest1.length < 50) {
             appData.expenses[quest1] = quest2;
         } else {
-            quest1 = prompt('Введите обязательную статью расходов в этом месяце', ''),
-            quest2 = prompt('Во сколько обойдется?', '');
+            console.log ("bad result");
+            i--;
         }
 };
+
+// let i = 0;
+// while (i < 2) {
+//     let quest1 = prompt ("Введите обязательную статью расходов в этом месяце", ""),
+//         quest2 = prompt ("Во сколько обойдется?", "");
+
+//     if ( typeof(quest1)==='string' && typeof(quest1) != null && 
+//          typeof(quest2) != null && quest1 != "" && quest2 != "" 
+//          && quest1.length < 50) {
+
+//         console.log ("done");
+
+//         appData.expenses[quest1] = quest2;
+//     } else {
+//          console.log ("bad result");
+//          i--;
+//     }
+
+//     i++;
+// }
+
+// let i = 0;
+// do {
+//     let quest1 = prompt ("Введите обязательную статью расходов в этом месяце", ""),
+//         quest2 = prompt ("Во сколько обойдется?", "");
+
+//     if ( typeof(quest1)==='string' && typeof(quest1) != null && 
+//          typeof(quest2) != null && quest1 != "" && 
+//          quest2 != "" && quest1.length < 50) {
+
+//         console.log ("done");
+
+//         appData.expenses[quest1] = quest2;
+//     } else {
+//          console.log ("bad result");
+//          i--;
+//     }
+
+//     i++;
+// }
+// while(i < 2);
 
 appData.moneyPerDay = appData.budget/30;
 
